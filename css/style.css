@@ -12,7 +12,7 @@ html {
 }
 .shop-type {
 	margin-top: 2em;
-	margin-left: 10em; 
+	margin-left: 10em;
 	list-style: none;
 	border: solid 1px black;
 	box-sizing: border-box;
@@ -33,7 +33,7 @@ h1 {
     bottom: 9em;
     width: 10em;
     background-color: white;
-    display: none;
+    /*display: none;*/
 }
 .fruit-box li {
 	list-style: none;
