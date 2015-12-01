@@ -1,0 +1,40 @@
+html {
+	background-image: url('http://www.agentleplace.com/wp-content/uploads/2010/06/page-bg2.jpg');
+	background-repeat: ;
+}
+.header {
+	border: solid 1px black;
+}
+.content {
+	border: solid 1px black;
+	box-sizing: border-box;
+
+}
+.shop-type {
+	margin-top: 2em;
+	margin-left: 10em; 
+	list-style: none;
+	border: solid 1px black;
+	box-sizing: border-box;
+	width: 10em;
+	background-color: lightgrey;
+}
+.shop-type li {
+	margin-top: 2em;
+}
+h1 {
+	text-align: center;
+	padding: 2em;
+}
+.fruit-box {
+	border: solid 1px black;
+	position: relative;
+	left: 33em;
+    bottom: 9em;
+    width: 10em;
+    background-color: white;
+    display: none;
+}
+.fruit-box li {
+	list-style: none;
+}
