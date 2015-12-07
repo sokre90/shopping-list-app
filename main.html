@@ -6,31 +6,112 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 	<script src="js/app.js"></script>
-	<script>$('.fruit-box').show();</script>
 </head>
 <body>
 	<div class="header">
 		<h1>E-Z Shop</h1>
 	</div>
 	<div class="content">
-		<nav>
-			<ul class="shop-type">
-				<li id="fruit">Fruit</li>
-				<li id="vegetables">Vegetables</li>
-				<li id="meat">Meat</li>
-				<li id="beverages">Beverages</li>
-				<li id="house">House Maintenance</li>
-			</ul>
-		</nav>
-		<div class="fruit-box">
+		<form id="category-dbox">
+		<select id="groceries">
+			<option value="choose">Choose a category...</option>
+			<option class="fruit" value="fruit">Fruit</option>
+			<option value="vegetables">Vegetables</option>
+			<option value="meat">Meat</option>
+			<option value="beverages">Beverages</option>
+			<option value="other">Other</option>
+		</select>
+			<!-- <input class="food" type="text" placeholder="Grocery name"><br> -->
+			
+		</form>
+		<form id="fruit">
+			<input type="checkbox" name="checkboxname" value="Apple">Apples
+			<input type="checkbox" name="checkboxname" value="Orange">Oranges
+			<input type="checkbox" name="checkboxname" value="Pineapple">Pineapple
+			<input type="checkbox" name="checkboxname" value="Strawberry">Strawberries
+			<input type="checkbox" name="checkboxname" value="Banana">Bananas
+			<input class="food" type="text" placeholder="other type of fruit">
+			<input type="submit" value="add to list">
+		</form>
+		<form id="vegetable">
+			<input type="checkbox" name="checkboxname" value="tomato">Tomatoes
+			<input type="checkbox" name="checkboxname" value="lettuce">Lettuce
+			<input type="checkbox" name="checkboxname" value="peppers">Peppers
+			<input type="checkbox" name="checkboxname" value="peas">Peas
+			<input type="checkbox" name="checkboxname" value="broccoli">Broccoli
+			<input class="food" type="text" placeholder="other type of vegetable">
+			<input type="submit" value="add to list">
+		</form>
+		<form id="meat"
+			<input type="checkbox" name="checkboxname" value="chicken">Chicken
+			<input type="checkbox" name="checkboxname" value="beef">Beef
+			<input type="checkbox" name="checkboxname" value="turkey">Turkey
+			<input type="checkbox" name="checkboxname" value="pork">Pork
+			<input type="checkbox" name="checkboxname" value="lamb">Lamb
+			<input class="food" type="text" placeholder="other type of meat">
+			<input type="submit" value="add to list">
+		</form>
+		<form id="beverages">
+			<input type="checkbox" name="checkboxname" value="soda">Soda
+			<input type="checkbox" name="checkboxname" value="milk">Milk
+			<input type="checkbox" name="checkboxname" value="ice tea">Ice tea
+			<input type="checkbox" name="checkboxname" value="orange juice">Orange Juice
+			<input type="checkbox" name="checkboxname" value="Beer">Beer
+			<input class="food" type="text" placeholder="other type of beverage">
+			<input type="submit" value="add to list">
+		</form>
+		<!-- <ul class="shop-type">
+			<li id="fruit">Fruit</li>
+			<li id="veggies">Vegetables</li>
+			<li id="meat">Meat</li>
+			<li id="beverages">Beverages</li>
+			<li id="house">Other</li>
+		</ul> -->
+		<!-- <div class="fruit-box">
 			<ul>
-				<li>Orange</li>
-				<li>Apple</li>
-				<li>Banana</li>
-				<li>Pineapple</li>
-				<li>Strawberry</li>
+				<li class="click-orange">Oranges</li>
+				<li class="add-apple">Apples</li>
+				<li class="add-banana">Bananas</li>
+				<li class="add-pineapple">Pineapple</li>
+				<li class="add-strawberry">Strawberry</li>
+			</ul>
+		</div> -->
+		<!-- <div class="veggie-box">
+			<ul>
+				<li>Lettuce</li>
+				<li>Tomatoes</li>
+				<li>Carrots</li>
+				<li>Onion</li>
+				<li>Garlic</li>
 			</ul>
 		</div>
+		<div class="meat-box">
+			<ul>
+				<li>Chicken</li>
+				<li>Beef</li>
+				<li>Turkey</li>
+				<li>Lamb</li>
+				<li>Pork</li>
+			</ul>
+		</div>
+		<div class="drink-box">
+			<ul>
+				<li>Coke</li>
+				<li>Sprite</li>
+				<li>Orange Juice</li>
+				<li>Milk</li>
+				<li>Beer</li>
+			</ul>
+		</div>
+		<div class="other-box">
+			<ul>
+				<li>Utensils</li>
+				<li>Dish Soap</li>
+				<li>Cutlery</li>
+				<li>Cleaning items</li>
+				<li>Trash bags</li>
+			</ul>
+		</div> -->
 	</div>
 	<footer>
 	</footer>
