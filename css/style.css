@@ -25,33 +25,33 @@ h1 {
 	background-color: lightgrey;
 */	font-size: 20px;
 }
-.fruit-box {
+/*.fruit-box {
 /*	border: solid 2px red;*/
 /*	background-color: white;
 */}
-.fruit-box li {
+/*.fruit-box li {
 	list-style: none;
 }
 .veggie-box {
 /*	border: solid 2px green;
 	background-color: white;*/
 }
-.veggie-box li {
+/*.veggie-box li {
 	list-style: none;
-/*	display: flex;
-	justify-content: row;*/
+	display: flex;
+	justify-content: row;
 }
 .shop-type li, .fruit-box li, .veggie-box li,
 .meat-box li, .drink-box li, .other-box li {
 	width: 10%;
 	margin-top: 1em;
 	list-style: none;
-}
-.fruit-box, .veggie-box,
+}*/
+/*.fruit-box, .veggie-box,
 .meat-box, .drink-box, .other-box {
 	display: flex;
 	justify-content: center;
-} 
+} */
 #fruit, #vegetable, #meat, #beverages, #other {
 	display: none;
 }
