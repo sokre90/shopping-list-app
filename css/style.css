@@ -1,6 +1,6 @@
 html {
 	background-image: url('http://www.agentleplace.com/wp-content/uploads/2010/06/page-bg2.jpg');
-	background-repeat: ;
+	background-repeat: repeat;
 }
 .header {
 	border: solid 1px black;
@@ -19,22 +19,22 @@ h1 {
 	justify-content: space-around;
 	align-items: center;
 }
-.shop-type {
+/*.shop-type {
 	list-style: none;
-/*	border: solid 1px black;
+	border: solid 1px black;
 	background-color: lightgrey;
-*/	font-size: 20px;
+	font-size: 20px;
 }
 /*.fruit-box {
 /*	border: solid 2px red;*/
 /*	background-color: white;
-*/}
+}
 /*.fruit-box li {
 	list-style: none;
 }
 .veggie-box {
 /*	border: solid 2px green;
-	background-color: white;*/
+	background-color: white;
 }
 /*.veggie-box li {
 	list-style: none;
@@ -52,6 +52,6 @@ h1 {
 	display: flex;
 	justify-content: center;
 } */
-#fruit, #vegetable, #meat, #beverages, #other {
+/*.fruit, .vegetable, .meat, .beverages, .other {
 	display: none;
-}
+}*/
