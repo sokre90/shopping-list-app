@@ -25,47 +25,58 @@
 			<button id="btn1">show items</button>			
 		</form>
 		<div class='fruit'>
-		<form>
-			<input type="checkbox" name="checkboxname" value="Apple">Apples
-			<input type="checkbox" name="checkboxname" value="Orange">Oranges
-			<input type="checkbox" name="checkboxname" value="Pineapple">Pineapple
-			<input type="checkbox" name="checkboxname" value="Strawberry">Strawberries
-			<input type="checkbox" name="checkboxname" value="Banana">Bananas
+		<form id="chkfruit">
+			<input id="checkapple" type="checkbox" name="checkboxname" value="Apples">Apples
+			<input id="checkorange" type="checkbox" name="checkboxname" value="Oranges">Oranges
+			<input id="checkpineapple" type="checkbox" name="checkboxname" value="Pineapple">Pineapple
+			<input type="checkbox" name="checkboxname" value="Strawberries">Strawberries
+			<input type="checkbox" name="checkboxname" value="Bananas">Bananas
 			<input class="food" type="text" placeholder="other type of fruit">
-			<input type="submit" value="add to list">
+			<input class="addfruit" type="submit" value="add to list">
 		</form>
 		</div>
 		<div class='vegetables'>
 		<form>
-			<input type="checkbox" name="checkboxname" value="tomato">Tomatoes
-			<input type="checkbox" name="checkboxname" value="lettuce">Lettuce
-			<input type="checkbox" name="checkboxname" value="peppers">Peppers
-			<input type="checkbox" name="checkboxname" value="peas">Peas
-			<input type="checkbox" name="checkboxname" value="broccoli">Broccoli
+			<input type="checkbox" name="checkboxname" value="Tomatoes">Tomatoes
+			<input type="checkbox" name="checkboxname" value="Lettuce">Lettuce
+			<input type="checkbox" name="checkboxname" value="Peppers">Peppers
+			<input type="checkbox" name="checkboxname" value="Peas">Peas
+			<input type="checkbox" name="checkboxname" value="Broccoli">Broccoli
 			<input class="food" type="text" placeholder="other type of vegetable">
-			<input type="submit" value="add to list">
+			<input class="addveggie" type="submit" value="add to list">
 		</form>
 		</div>
 		<div class='meat'>
 		<form>
-			<input type="checkbox" name="checkboxname" value="chicken">Chicken
-			<input type="checkbox" name="checkboxname" value="beef">Beef
-			<input type="checkbox" name="checkboxname" value="turkey">Turkey
-			<input type="checkbox" name="checkboxname" value="pork">Pork
-			<input type="checkbox" name="checkboxname" value="lamb">Lamb
+			<input type="checkbox" name="checkboxname" value="Chicken">Chicken
+			<input type="checkbox" name="checkboxname" value="Beef">Beef
+			<input type="checkbox" name="checkboxname" value="Turkey">Turkey
+			<input type="checkbox" name="checkboxname" value="Pork">Pork
+			<input type="checkbox" name="checkboxname" value="Lamb">Lamb
 			<input class="food" type="text" placeholder="other type of meat">
-			<input type="submit" value="add to list">
+			<input class="add" type="submit" value="add to list">
 		</form>
 		</div>
 		<div class='beverages'>
 		<form>
-			<input type="checkbox" name="checkboxname" value="soda">Soda
-			<input type="checkbox" name="checkboxname" value="milk">Milk
-			<input type="checkbox" name="checkboxname" value="ice tea">Ice tea
-			<input type="checkbox" name="checkboxname" value="orange juice">Orange Juice
+			<input type="checkbox" name="checkboxname" value="Soda">Soda
+			<input type="checkbox" name="checkboxname" value="Milk">Milk
+			<input type="checkbox" name="checkboxname" value="Ice tea">Ice tea
+			<input type="checkbox" name="checkboxname" value="Orange juice">Orange Juice
 			<input type="checkbox" name="checkboxname" value="Beer">Beer
 			<input class="food" type="text" placeholder="other type of beverage">
-			<input type="submit" value="add to list">
+			<input class="add" type="submit" value="add to list">
+		</form>
+		</div>
+		<div class='other'>
+		<form>
+			<input type="checkbox" name="checkboxname" value="Utensils">Utensils
+			<input type="checkbox" name="checkboxname" value="Dish soap">Dish soap
+			<input type="checkbox" name="checkboxname" value="Eggs">Eggs
+			<input type="checkbox" name="checkboxname" value="Cleaning material">Cleaning material
+			<input type="checkbox" name="checkboxname" value="Trash bags">Trash bags
+			<input class="food" type="text" placeholder="other item">
+			<input class="add" type="submit" value="add to list">
 		</form>
 		</div>
 		<!-- <ul class="shop-type">
@@ -120,6 +131,10 @@
 				<li>Trash bags</li>
 			</ul>
 		</div> -->
+	</div>
+	<div id="list">
+		<ul class="shoplist">
+		</ul>
 	</div>
 	<footer>
 	</footer>

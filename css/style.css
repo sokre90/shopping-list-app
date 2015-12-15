@@ -1,6 +1,10 @@
 html {
-	background-image: url('http://www.agentleplace.com/wp-content/uploads/2010/06/page-bg2.jpg');
+	background-color: black;
+}
+body {
+	background-image: url("http://www.agentleplace.com/wp-content/uploads/2010/06/page-bg2.jpg");
 	background-repeat: repeat;
+
 }
 .header {
 	border: solid 1px black;
@@ -55,3 +59,9 @@ h1 {
 /*.fruit, .vegetable, .meat, .beverages, .other {
 	display: none;
 }*/
+.shoplist {
+	color: white;
+	/*display: flex;
+	justify-content: center;
+	align-items: row;*/
+}
