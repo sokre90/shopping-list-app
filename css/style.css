@@ -1,13 +1,12 @@
 html {
-	background-color: black;
+	background-color: white;
 }
 body {
-	background-image: url("http://www.agentleplace.com/wp-content/uploads/2010/06/page-bg2.jpg");
-	background-repeat: repeat;
 
 }
 .header {
 	border: solid 1px black;
+	background-color: tan;
 }
 h1 {
 	text-align: center;
@@ -16,52 +15,84 @@ h1 {
 	font-size: 40px;
 	font-weight: bold;
 }
-.content {
+span.char1 {
+	color: rgb(53, 109, 177);
+}
+span.char2 {
+	color: rgb(211, 18, 121);
+}
+span.char3 {
+	color: rgb(68, 165, 50);
+}
+span.char4 {
+	color: rgb(226, 90, 54);
+}
+#content {
+	background-image: url("http://cdn.designrfix.com/wp-content/uploads/yapb_cache/shopping_cart_cover.dfzb1u50v3wc8ksowk8gk8wgc.26qeyncemmo0w4w4sgokogcgw.th.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: white;
 	border: solid 2px black;
 	display: flex;
-	justify-content: row;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-between;
+	height: 32em;
 }
-/*.shop-type {
-	list-style: none;
-	border: solid 1px black;
-	background-color: lightgrey;
-	font-size: 20px;
+.categories {
+	align-self: center;
+	margin-left: 8em;
 }
-/*.fruit-box {
-/*	border: solid 2px red;*/
-/*	background-color: white;
-}
-/*.fruit-box li {
-	list-style: none;
-}
-.veggie-box {
-/*	border: solid 2px green;
-	background-color: white;
-}
-/*.veggie-box li {
-	list-style: none;
-	display: flex;
-	justify-content: row;
-}
-.shop-type li, .fruit-box li, .veggie-box li,
-.meat-box li, .drink-box li, .other-box li {
-	width: 10%;
-	margin-top: 1em;
-	list-style: none;
-}*/
-/*.fruit-box, .veggie-box,
-.meat-box, .drink-box, .other-box {
-	display: flex;
-	justify-content: center;
-} */
-/*.fruit, .vegetable, .meat, .beverages, .other {
-	display: none;
-}*/
-.shoplist {
+#list {
 	color: white;
-	/*display: flex;
+	display: flex;
 	justify-content: center;
-	align-items: row;*/
+	align-items: row;
 }
+.items {
+	align-self: flex-end;
+}
+.items li {
+	list-style: none;
+	margin-top: 1em;
+}
+/* fruit checkbox style */
+/*input[type="checkbox"] {
+/*	display: none;
+}
+#checkboxfruit {
+	width: 40px;
+	height: 40px;
+	background: #ddd;
+	margin: 20px 90px;
+
+	border-radius: 100%;
+	position: relative;
+	-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+#checkboxfruit label {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 100px;
+
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 1;
+
+	background: #333;
+
+	-webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+}
+#checkboxfruit input[type=checkbox]:checked + label {
+	background: green;
+}*/
