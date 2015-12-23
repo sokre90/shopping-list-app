@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shopping List App</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
 	<div class="header">
-		<h1><span class="char1">E</span><span class="char2">-</span><span class="char3">Z</span><span class="char4"> Shop</span></h1>
+		<div class="h1">
+			<h1><span class="char1">E</span><span class="char2">-</span><span class="char3">Z</span><span class="char4"> Shop</span></h1>
+		</div>
 	</div>
 	<div id="content">
-		<div class='categories'>
+		<div id='items'>
 		<form>
 		<select>
 			<option value="choose">Choose a category...</option>
@@ -23,20 +27,16 @@
 			<option value="other">Other</option>
 			<option value="all categories">Show all</option>
 		</select>
-			<!-- <input class="food" type="text" placeholder="Grocery name"><br> -->
 			<button id="btn1">show items</button>
-		</div>
-		<div class="items">		
 		</form>
 		<ul>
 		<li><div class='fruit'>
 		<form>
-			<input id="checkboxfruit" type="checkbox" name="checkboxname" value="Apples">Apples
-			<label for="checkboxfruit"></label>
-			<input type="checkbox" name="checkboxname" value="Oranges">Oranges
-			<input type="checkbox" name="checkboxname" value="Pineapple">Pineapple
-			<input type="checkbox" name="checkboxname" value="Strawberries">Strawberries
-			<input type="checkbox" name="checkboxname" value="Bananas">Bananas
+			<input id="checkboxfruit" type="checkbox" name="checkboxname" value="Apples">Apples<br>
+			<input type="checkbox" name="checkboxname" value="Oranges">Oranges<br>
+			<input type="checkbox" name="checkboxname" value="Pineapple">Pineapple<br>
+			<input type="checkbox" name="checkboxname" value="Strawberries">Strawberries<br>
+			<input type="checkbox" name="checkboxname" value="Bananas">Bananas<br>
 			
 			<!-- <input class="food" type="text" placeholder="other type of fruit">
 			<input class="add" type="submit" value="add to list"> -->
@@ -44,53 +44,56 @@
 		</div></li>
 		<li><div class='vegetables'>
 		<form>
-			<input type="checkbox" name="checkboxname" value="Tomatoes">Tomatoes
-			<input type="checkbox" name="checkboxname" value="Lettuce">Lettuce
-			<input type="checkbox" name="checkboxname" value="Peppers">Peppers
-			<input type="checkbox" name="checkboxname" value="Peas">Peas
-			<input type="checkbox" name="checkboxname" value="Broccoli">Broccoli
+			<input type="checkbox" name="checkboxname" value="Tomatoes">Tomatoes<br>
+			<input type="checkbox" name="checkboxname" value="Lettuce">Lettuce<br>
+			<input type="checkbox" name="checkboxname" value="Peppers">Peppers<br>
+			<input type="checkbox" name="checkboxname" value="Peas">Peas<br>
+			<input type="checkbox" name="checkboxname" value="Broccoli">Broccoli<br>
 			<!-- <input class="food" type="text" placeholder="other type of vegetable">
 			<input class="add" type="submit" value="add to list"> -->
 		</form>
 		</div></li>
 		<li><div class='meat'>
 		<form>
-			<input type="checkbox" name="checkboxname" value="Chicken">Chicken
-			<input type="checkbox" name="checkboxname" value="Beef">Beef
-			<input type="checkbox" name="checkboxname" value="Turkey">Turkey
-			<input type="checkbox" name="checkboxname" value="Pork">Pork
-			<input type="checkbox" name="checkboxname" value="Lamb">Lamb
+			<input type="checkbox" name="checkboxname" value="Chicken">Chicken<br>
+			<input type="checkbox" name="checkboxname" value="Beef">Beef<br>
+			<input type="checkbox" name="checkboxname" value="Turkey">Turkey<br>
+			<input type="checkbox" name="checkboxname" value="Pork">Pork<br>
+			<input type="checkbox" name="checkboxname" value="Lamb">Lamb<br>
 			<!-- <input class="food" type="text" placeholder="other type of meat">
 			<input class="add" type="submit" value="add to list"> -->
 		</form>
 		</div></li>
 		<li><div class='beverages'>
 		<form>
-			<input type="checkbox" name="checkboxname" value="Soda">Soda
-			<input type="checkbox" name="checkboxname" value="Milk">Milk
-			<input type="checkbox" name="checkboxname" value="Ice tea">Ice tea
-			<input type="checkbox" name="checkboxname" value="Orange juice">Orange Juice
-			<input type="checkbox" name="checkboxname" value="Beer">Beer
+			<input type="checkbox" name="checkboxname" value="Soda">Soda<br>
+			<input type="checkbox" name="checkboxname" value="Milk">Milk<br>
+			<input type="checkbox" name="checkboxname" value="Ice tea">Ice tea<br>
+			<input type="checkbox" name="checkboxname" value="Orange juice">Orange Juice<br>
+			<input type="checkbox" name="checkboxname" value="Beer">Beer<br>
 			<!-- <input class="food" type="text" placeholder="other type of beverage">
 			<input class="add" type="submit" value="add to list"> -->
 		</form>
 		</div></li>
 		<li><div class='other'>
 		<form>
-			<input type="checkbox" name="checkboxname" value="Utensils">Utensils
-			<input type="checkbox" name="checkboxname" value="Dish soap">Dish soap
-			<input type="checkbox" name="checkboxname" value="Eggs">Eggs
-			<input type="checkbox" name="checkboxname" value="Cleaning material">Cleaning material
-			<input type="checkbox" name="checkboxname" value="Trash bags">Trash bags
+			<input type="checkbox" name="checkboxname" value="Utensils">Utensils<br>
+			<input type="checkbox" name="checkboxname" value="Dish soap">Dish soap<br>
+			<input type="checkbox" name="checkboxname" value="Eggs">Eggs<br>
+			<input type="checkbox" name="checkboxname" value="Cleaning material">Cleaning material<br>
+			<input type="checkbox" name="checkboxname" value="Trash bags">Trash bags<br>
 			<!-- <input class="food" type="text" placeholder="other item">
 			<input class="add" type="submit" value="add to list"> -->
 		</form>
 		</div></li>
 	</div>
-	</div>
-	<div id="list">
-		<ul class="shoplist">
-		</ul>
+		<!-- <div id="content-image">
+			<img src="image/shop-cart.jpeg"/>
+		</div> -->
+		<div id="list">
+			<ul class="shoplist">
+			</ul>
+		</div>
 	</div>
 	<footer>
 	</footer>

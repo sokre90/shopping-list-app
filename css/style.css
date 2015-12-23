@@ -1,98 +1,91 @@
 html {
-	background-color: white;
+	background-color: black;
+	background-image: url('../image/leaf-bg.jpg');
 }
 body {
-
+	font-family: 'Lora', serif;
 }
 .header {
-	border: solid 1px black;
-	background-color: tan;
+	border: solid 15px tan;
+	border-radius: 25px;
+/*	border-bottom: solid 1px black;
+*//*	background-image: url('../image/leaf-bg.jpg');
+*/	background-color: tan;
+/*	background-image: url('../image/leaf-bg.jpg');*/
+	margin-bottom: 1em;
+
 }
 h1 {
 	text-align: center;
-/*	padding: 1em;
-*/	color: white;
+	color: white;
 	font-size: 40px;
 	font-weight: bold;
+/*	background-color: whitesmoke;
+*//*	opacity: 0.3;
+*/	width: 60%;
+	font-weight: bolder;
+	border-radius: 25px;
+}
+.h1 {
+	display: flex;
+	justify-content: center;
 }
 span.char1 {
 	color: rgb(53, 109, 177);
 }
 span.char2 {
-	color: rgb(211, 18, 121);
+	color: rgb(226, 90, 54)
 }
 span.char3 {
-	color: rgb(68, 165, 50);
+	color: rgb(211, 18, 121);
 }
 span.char4 {
-	color: rgb(226, 90, 54);
+	color: rgb(68, 165, 50);
 }
 #content {
-	background-image: url("http://cdn.designrfix.com/wp-content/uploads/yapb_cache/shopping_cart_cover.dfzb1u50v3wc8ksowk8gk8wgc.26qeyncemmo0w4w4sgokogcgw.th.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-color: white;
-	border: solid 2px black;
-	display: flex;
-	justify-content: space-between;
-	height: 32em;
+	background-color: rgb(103, 115, 11);
+	border: solid 15px rgb(162, 165, 20);
+	border-radius: 25px;
+/*	border-top: solid 1px black;
+*/	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	min-height: 32em;
 }
-.categories {
+/*img {
+	background-position: center;
+	margin: 0 20% 0 20%;
+	border-opacity: 0.5;
+}*/
+/*#content-image {
+	width: 40%;
 	align-self: center;
-	margin-left: 8em;
-}
+}*/
 #list {
-	color: white;
+	width: 40%;
+	color: rgb(103, 115, 11);
+	font-weight: bold;
 	display: flex;
-	justify-content: center;
 	align-items: row;
+	align-self: center;
+	flex-wrap: wrap;
+	background-color: whitesmoke;
+	border-radius: 25px;
+	width: 200px;
+/*	display: none;
+*/}
+#items {
+	width: 40%;
+	margin: 5% 0 0 5%;
+	display: flex;
+	flex-direction: column;
+	color: white;
 }
-.items {
-	align-self: flex-end;
-}
-.items li {
+#items li {
 	list-style: none;
 	margin-top: 1em;
 }
-/* fruit checkbox style */
-/*input[type="checkbox"] {
-/*	display: none;
+#items ul {
+	display: flex;
+	flex-wrap: wrap;
 }
-#checkboxfruit {
-	width: 40px;
-	height: 40px;
-	background: #ddd;
-	margin: 20px 90px;
-
-	border-radius: 100%;
-	position: relative;
-	-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
-}
-#checkboxfruit label {
-	display: block;
-	width: 30px;
-	height: 30px;
-	border-radius: 100px;
-
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	-ms-transition: all .5s ease;
-	transition: all .5s ease;
-	cursor: pointer;
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	z-index: 1;
-
-	background: #333;
-
-	-webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
-	-moz-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
-	box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
-}
-#checkboxfruit input[type=checkbox]:checked + label {
-	background: green;
-}*/
