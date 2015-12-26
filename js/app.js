@@ -8,11 +8,11 @@ $(document).ready(function() {
 		var choice = $('.categories option:selected').val();
 		if (choice == 'fruit') {
 			$('.fruit').show();
-			// $('.vegetables, .beverages, .meat, .other').hide();
+			$('.vegetables, .beverages, .meat, .other').hide();
 		}
 		else if (choice == 'vegetables') {
 			$('.vegetables').show();
-			// $('.fruit, .beverages, .meat, .other').hide();
+			$('.fruit, .beverages, .meat, .other').hide();
 		}
 		else if (choice == 'beverages') {
 			$('.beverages').show();
@@ -32,12 +32,15 @@ $(document).ready(function() {
 		}
 		event.preventDefault();
 	})
+	$('#list').hide();
 
 	$('input').change(function() {
+		$('#list').show();
 		$('.shoplist').empty();
 		$('form input:checked').each(function() {
 			var shoplist = $(this).val(); 
 			$('<li>').text(shoplist).appendTo('.shoplist');
 		})
 	})
+	// $("#items select").selectBoxIt();
 })

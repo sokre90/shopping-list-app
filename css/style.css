@@ -1,28 +1,22 @@
 html {
-	background-color: black;
+	background-color: rgb(197, 166, 115);
 	background-image: url('../image/leaf-bg.jpg');
 }
 body {
 	font-family: 'Lora', serif;
 }
 .header {
-	border: solid 15px tan;
+	border: solid 10px rgb(127, 74, 19);
 	border-radius: 25px;
-/*	border-bottom: solid 1px black;
-*//*	background-image: url('../image/leaf-bg.jpg');
-*/	background-color: tan;
-/*	background-image: url('../image/leaf-bg.jpg');*/
-	margin-bottom: 1em;
-
+	background-image: url('../image/leaf-bg.jpg');
+	margin-bottom: 0.5em;
 }
 h1 {
 	text-align: center;
 	color: white;
 	font-size: 40px;
 	font-weight: bold;
-/*	background-color: whitesmoke;
-*//*	opacity: 0.3;
-*/	width: 60%;
+	width: 60%;
 	font-weight: bolder;
 	border-radius: 25px;
 }
@@ -31,39 +25,28 @@ h1 {
 	justify-content: center;
 }
 span.char1 {
-	color: rgb(53, 109, 177);
+	color: rgb(80, 156, 173);
 }
 span.char2 {
-	color: rgb(226, 90, 54)
+	color: rgb(173, 177, 22);
 }
 span.char3 {
-	color: rgb(211, 18, 121);
+	color: rgb(214, 7, 94);
 }
 span.char4 {
-	color: rgb(68, 165, 50);
+	color: rgb(243, 141, 13);
 }
 #content {
-	background-color: rgb(103, 115, 11);
-	border: solid 15px rgb(162, 165, 20);
+	background-image: url('../image/grocery-shelves.jpg');
 	border-radius: 25px;
-/*	border-top: solid 1px black;
-*/	display: flex;
+	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
 	min-height: 32em;
 }
-/*img {
-	background-position: center;
-	margin: 0 20% 0 20%;
-	border-opacity: 0.5;
-}*/
-/*#content-image {
-	width: 40%;
-	align-self: center;
-}*/
 #list {
 	width: 40%;
-	color: rgb(103, 115, 11);
+	color: saddlebrown;
 	font-weight: bold;
 	display: flex;
 	align-items: row;
@@ -72,14 +55,27 @@ span.char4 {
 	background-color: whitesmoke;
 	border-radius: 25px;
 	width: 200px;
+	border: solid 1px saddlebrown;
 /*	display: none;
 */}
+#list li:nth-child(even) {
+	color: rgb(197, 166, 115);
+}
 #items {
 	width: 40%;
-	margin: 5% 0 0 5%;
 	display: flex;
 	flex-direction: column;
-	color: white;
+	margin: 5% 0 0 5%;	
+}
+#items select {
+	margin-left: 11em;
+	border-radius: 25px;
+	background-color: whitesmoke;
+	border: solid 1px saddlebrown;
+}
+#btn1 {
+	border-radius: 25px;
+	border: solid 1px saddlebrown;
 }
 #items li {
 	list-style: none;
@@ -88,4 +84,21 @@ span.char4 {
 #items ul {
 	display: flex;
 	flex-wrap: wrap;
+	background-color: whitesmoke;
+	border-radius: 25px;
+	color: saddlebrown;
+	font-weight: bold;
+	margin: 5%;
+	border: solid 1px saddlebrown;
+
+}
+#items li:nth-child(even) {
+	color: rgb(197, 166, 115);
+}
+@media (max-width: 400px) {
+	#content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
 }
